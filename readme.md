@@ -1,3 +1,7 @@
+# Kubix
+Created for testing and learning with Docker. 
+It's a little http-server that returnsomthing to sender.
+Based on node.js http-server.
 ### Build Docker Image
 ```bash
 docker build --build-arg "begruessung=Hello" -t 76mrmario/kubix .
