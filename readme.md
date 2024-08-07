@@ -1,6 +1,6 @@
 # Kubix
 Created for testing and learning with Docker. 
-It's a little http-server that returnsomthing to sender.
+It's a little http-server that return somthing to sender.
 Based on node.js http-server.
 ### Build Docker Image
 ```bash
