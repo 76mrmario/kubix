@@ -49,7 +49,7 @@ docker logs hello
 ```
 ### See something like this
 ```bash
-Kubia server starting...
+Kubix server starting...
 1722578278344 Received request from ::ffff:172.17.0.1
 1722578278377 Received request from ::ffff:172.17.0.1   
 ```
