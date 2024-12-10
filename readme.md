@@ -16,7 +16,7 @@ docker push 76mrmario/kubix
 ```
 ### Run Docker Container as deamon and name it hello
 ```bash
-docker run -p 8080:8080 -n hello -d 76mrmario/kubix
+docker run -p 8080:8080 --name hello -d 76mrmario/kubix
 ```
 ### Run Docker Container with new value for environment variable
 ```bash 
