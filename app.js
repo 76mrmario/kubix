@@ -1,6 +1,6 @@
 const http = require('http');
 const os = require('os');
-console.log("Kubia server starting...");
+console.log("Kubix server starting...");
 var handler = function(request, response) {
     console.log( Date.now()+" Received request from "+ request.connection.remoteAddress );
     response.writeHead(200);
