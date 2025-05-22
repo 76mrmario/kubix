@@ -16,6 +16,10 @@ docker login -u 76mrmario
 ```bash
 docker push 76mrmario/kubix
 ```
+### Pull it from docker hub anywhere
+```bash
+docker pull 76mrmario/kubix
+```
 ### Run Docker Container as deamon and name it hello
 ```bash
 docker run -p 8080:8080 --name hello -d 76mrmario/kubix
