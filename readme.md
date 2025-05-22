@@ -3,7 +3,7 @@ Created for testing and learning with Docker.
 It's a little http-server that return somthing to sender.
 Based on node.js http-server.
 ### Build Docker Image
-Tag it with your docker-hub-id (for later push to docker hub) and name it (in this case kubix)
+Tag it with your docker-hub-name (for later push to docker hub) and name it (in this case kubix)
 ```bash
 docker build --build-arg "begruessung=Hello" -t 76mrmario/kubix .
 ```
