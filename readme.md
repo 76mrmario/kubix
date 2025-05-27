@@ -1,7 +1,17 @@
 # Kubix
-Created for testing and learning with Docker. 
+Created for testing and learning with Docker. Simple Dockerfile.
 It's a little http-server that return somthing to sender.
 Based on node.js http-server.
+### Basic Dockerfile Instructions
+#### FROM
+From Base Image from e.g. Dockerhub it will enhance with the next instructions.
+#### ADD
+#### COPY
+#### ADD vs COPY
+#### RUN
+Use run to run some OS Commands e.g. `apt-get install ...`
+
+
 ### Build Docker Image
 Tag it with your docker-hub-name (for later push to docker hub) and name it (in this case kubix)
 ```bash
