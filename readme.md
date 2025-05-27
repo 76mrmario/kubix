@@ -1,5 +1,5 @@
 # Kubix
-Created for testing and learning with Docker. Simple Dockerfile.
+Created for testing and learning with Docker. It uses a simple Dockerfile.
 It's a little http-server that return somthing to sender.
 Based on node.js http-server.
 ### Basic Dockerfile Instructions
