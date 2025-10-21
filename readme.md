@@ -10,7 +10,7 @@ docker build --build-arg "begruessung=Hello" -t 76mrmario/kubix .
 ### Login to Docker Hub
 For pushing to docker hub login.
 ```bash
-docker login -u 76mrmario
+docker login -u <your login name>
 ```
 ### Push it to docker hub
 ```bash
