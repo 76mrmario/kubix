@@ -5,6 +5,15 @@ on:
   workflow_dispatch:
 
 jobs:
+  write-sha:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Write commit SHA to file
+        run: echo "${{ github.sha }}" > commit.sha
 
   build:
 
