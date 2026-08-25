@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
+
   write-sha:
     runs-on: ubuntu-latest
 
@@ -26,7 +27,9 @@ jobs:
   
   push:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
