@@ -71,7 +71,9 @@ docker stop hello
 ```bash
 docker rm hello
 ```
+
 ### Remove Image from your local registry
 ```bash
 docker rmi <your login name>/kubix
 ```
+### Add Github action for image build  
