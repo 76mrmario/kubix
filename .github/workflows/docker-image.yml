@@ -22,6 +22,31 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --build-arg GIT_SHA=${{ github.sha }} --tag my-image-name:${{ github.sha }}        
-        
+      run: docker build . --file Dockerfile --build-arg GIT_SHA=${{ github.sha }} --tag ${{ github.repository }}:${{ github.sha }} 
+  
+  push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Login to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and Push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
+          build-args:
+            GIT_SHA=${{ github.sha }} 
+            BEGRUESSUNG="Hallo!"
         
