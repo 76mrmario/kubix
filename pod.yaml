@@ -9,4 +9,7 @@ spec:
     - name: kubix
       image: ghcr.io/76mrmario/kubix:latest
       imagePullPolicy: Always
+            
+      ports:
+        - containerPort: 80
   restartPolicy: Always
